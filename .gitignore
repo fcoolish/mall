@@ -35,3 +35,6 @@ WebRoot/WEB-INF/lib/
  
 #忽略编译文件夹
 classes/
+
+#忽略文件
+.gitignore
