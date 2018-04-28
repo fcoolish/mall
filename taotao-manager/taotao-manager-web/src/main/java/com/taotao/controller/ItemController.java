@@ -4,9 +4,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.taotao.common.pojo.EUDataGridResult;
+import com.taotao.common.pojo.TaotaoResult;
 import com.taotao.pojo.TbItem;
 import com.taotao.service.ItemService;
 
@@ -28,6 +30,21 @@ public class ItemController {
 	@ResponseBody
 	public EUDataGridResult getItemList(Integer page, Integer rows) {
 		EUDataGridResult result = itemService.getItemList(page, rows);
+		return result;
+	}
+	
+	/**
+	 * 
+	 * @param item
+	 * @param 商品添加
+	 * @param itemParams
+	 * @return
+	 * @throws Exception
+	 */
+	@RequestMapping(value="/item/save", method=RequestMethod.POST)
+	@ResponseBody
+	private TaotaoResult createItem(TbItem item) throws Exception {
+		TaotaoResult result = itemService.createItem(item);
 		return result;
 	}
 }
