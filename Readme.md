@@ -19,13 +19,16 @@
 
 # 技术选型
 Spring、SpringMVC、Mybatis  
-JSP、JSTL、jQuery、jQuery plugin、EasyUI、KindEditor（富文本编辑器）、CSS+DIV  
+Jsp、Jstl、jQuery、jQuery plugin、EasyUI、KindEditor（富文本编辑器）  
 Redis（缓存服务器）  
 Solr（搜索）  
 httpclient（调用系统服务）  
 Mysql  
 Nginx（web服务器）  
 
+
+# 说明
+此项目代码仅供初学者参考，不可用作商业用途。
 
 
 
