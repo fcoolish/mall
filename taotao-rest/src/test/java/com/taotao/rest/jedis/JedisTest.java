@@ -8,7 +8,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import com.sun.tools.internal.xjc.model.SymbolSpace;
+
 
 import redis.clients.jedis.HostAndPort;
 import redis.clients.jedis.Jedis;

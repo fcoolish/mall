@@ -16,9 +16,6 @@ import com.taotao.order.service.OrderService;
  * 订单Controller
  * <p>Title: OrderController</p>
  * <p>Description: </p>
- * <p>Company: www.itcast.com</p> 
- * @author	入云龙
- * @date	2015年9月16日上午10:46:50
  * @version 1.0
  */
 @Controller
